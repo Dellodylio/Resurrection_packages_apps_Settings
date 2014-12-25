@@ -1734,6 +1734,7 @@
         />
 
         <!-- CyanogenMod activities Start -->
+<<<<<<< HEAD
         <activity android:name="Settings$VoiceWakeupSettingsActivity"
                 android:label="@string/voice_wakeup_settings_title"
                 android:taskAffinity=""
@@ -1748,6 +1749,10 @@
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
                 android:resource="@id/voice_wakeup_settings" />
         </activity>
+=======
+
+        <activity android:name=".headsup.HeadsUpSettings" />
+>>>>>>> 124fb0d... Settings: forward port HeadsUp options (2/2)
 
         <activity android:name=".profiles.ProfilesSettings" />
         <activity android:name="Settings$ProfilesSettingsActivity"

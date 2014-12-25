@@ -105,6 +105,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private Preference mNotificationAccess;
     private boolean mSecure;
     private int mLockscreenSelectedValue;
+    private Preference mHeadsUp;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -143,6 +144,28 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         refreshNotificationListeners();
+<<<<<<< HEAD
+=======
+
+        mAnnoyingNotifications = (ListPreference) findPreference(PREF_LESS_NOTIFICATION_SOUNDS);
+        int notificationThreshold = Settings.System.getInt(getContentResolver(),
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, 0);
+        updateAnnoyingNotificationValues();
+
+        mHeadsUp = findPreference(Settings.System.HEADS_UP_NOTIFICATION);
+    }
+
+    private void updateAnnoyingNotificationValues() {
+        int notificationThreshold = Settings.System.getInt(getContentResolver(),
+                Settings.System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD, 0);
+        if (mAnnoyingNotifications == null) {
+            mAnnoyingNotifications.setSummary(getString(R.string.less_notification_sounds_summary));
+        } else {
+            mAnnoyingNotifications.setValue(Integer.toString(notificationThreshold));
+            mAnnoyingNotifications.setSummary(mAnnoyingNotifications.getEntry());
+            mAnnoyingNotifications.setOnPreferenceChangeListener(this);
+        }
+>>>>>>> 124fb0d... Settings: forward port HeadsUp options (2/2)
     }
 
     @Override
@@ -152,6 +175,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         lookupRingtoneNames();
         updateNotificationPreferenceState();
         mSettingsObserver.register(true);
+        
+        boolean headsUpEnabled = Settings.System.getInt(
+                getContentResolver(), Settings.System.HEADS_UP_NOTIFICATION, 0) == 1;
+        mHeadsUp.setSummary(headsUpEnabled
+                ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
 
     @Override
