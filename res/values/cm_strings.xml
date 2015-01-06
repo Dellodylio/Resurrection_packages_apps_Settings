@@ -948,8 +948,8 @@
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
     <!-- Notification drawer -->
-    <string name="notification_drawer_title">Notification drawer</string>
-    <string name="qs_order">Quick Settings</string>
+    <string name="notification_drawer_title"><i><b>Notification drawer</b></i></string>
+    <string name="qs_order"><i><b>Quick Settings</b></i></string>
     <string name="qs_order_summary">Add new tiles or reorder them</string>
     <string name="add_qs">Add new tile</string>
     <string name="qs_already_added_all">There aren\'t any more tiles to add.</string>
