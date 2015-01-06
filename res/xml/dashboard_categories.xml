@@ -89,7 +89,6 @@
                 android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
                 android:icon="@drawable/ic_performance_icon_tint"
                 />                
-
     </dashboard-category>
 
     <!-- DEVICE -->

@@ -945,9 +945,15 @@
 <<<<<<< HEAD
 =======
     <!-- Notification drawer -->
+<<<<<<< HEAD
     <string name="notification_drawer_title">Notification drawer</string>
     <string name="qs_category_title">Quick Settings</string>
     <string name="qs_order_title">Select and order tiles</string>
+=======
+    <string name="notification_drawer_title"><i><b>Notification drawer</b></i></string>
+    <string name="qs_order"><i><b>Quick Settings</b></i></string>
+    <string name="qs_order_summary">Add new tiles or reorder them</string>
+>>>>>>> 2d4381a... fix
     <string name="add_qs">Add new tile</string>
     <string name="cast_screen">Cast screen</string>
     <string name="hotspot">Hotspot</string>
