@@ -333,6 +333,7 @@
         <item>3</item>
     </string-array>
     
+<<<<<<< HEAD
     <!-- Heads up -->
     <string-array name="heads_up_snooze_entries">
         <item>@string/disabled</item>
@@ -376,6 +377,8 @@
         <item>@string/volume_steps_7</item>
         <item>@string/volume_steps_5</item>
     </string-array>
+=======
+>>>>>>> parent of 6324a50... Settings: : initial Slim heads up customizations
     <!-- Icon type for lockscreen shorcut. -->
     <string-array name="icon_types">
         <item>@string/shortcuts_icon_default</item>
