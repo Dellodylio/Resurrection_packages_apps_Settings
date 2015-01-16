@@ -960,5 +960,5 @@
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
-    <string name="themes_settings_title">Themes</string>
+    <string name="themes_settings_title"><i><b>Themes</b></i></string>
 </resources>
