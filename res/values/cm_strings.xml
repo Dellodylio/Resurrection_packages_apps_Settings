@@ -942,8 +942,6 @@
     <string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
     <string name="notification_volume_option_title">Notification volume</string>
 
-<<<<<<< HEAD
-=======
     <!-- Notification drawer -->
     <string name="notification_drawer_title">Notification drawer</string>
     <string name="qs_category_title">Quick Settings</string>
@@ -957,5 +955,4 @@
     <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
->>>>>>> e8a6419... Add customization for Quick Settings [2/2]
 </resources>
