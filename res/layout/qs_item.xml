@@ -30,9 +30,7 @@
         android:id="@android:id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="11sp"
-        android:textColor="#F5F5F5"
-        android:textStyle="normal|bold"
+        android:textSize="16sp"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"/>
 
